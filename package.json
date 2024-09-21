@@ -1,0 +1,17 @@
+{
+  "name": "number-drag-input",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "whiterook6@gmail.com",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "dev:build": "node build/dev-build.mjs",
+    "dev:watch": "node build/dev-watch.mjs",
+    "prod:build": "node build/prod-build.mjs"
+  },
+  "devDependencies": {
+    "esbuild": "^0.20.2",
+    "typescript": "^5.4.5"
+  }
+}

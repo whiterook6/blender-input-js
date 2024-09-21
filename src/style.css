@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 720px;
+  margin: 32px auto;
+}
+
+input {
+  width: 100%;
+  display: block;
+}
