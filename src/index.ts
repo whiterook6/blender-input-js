@@ -1,16 +1,16 @@
 const input = document.getElementById('input') as HTMLInputElement;
 let isDragging = false;
 
-input.addEventListener('mousedown', () => {
-  let startX = input.offsetLeft;
-  let startValue = parseInt(input.value);
+input.addEventListener('mousedown', (event: MouseEvent) => {
+  let startX: number = event.clientX;
+  let startValue: number = parseFloat(input.value) || 0;
   isDragging = true;
   
 
   const onMouseMove = (event: MouseEvent) => {
     if (isDragging) {
       const diff = (event.clientX - startX) / 10;
-      input.value = diff.toString() + startValue;
+      input.value = (diff + startValue).toFixed(2);
     }
   }
 
